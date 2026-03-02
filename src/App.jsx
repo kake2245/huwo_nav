@@ -209,11 +209,16 @@ function App() {
     <div style={{ 
       minHeight: '100vh', 
       backgroundColor: '#f3f4f6',
-      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
+      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+      backgroundImage: 'url("/src/img/bk1.jpg")',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat'
     }}>
       {/* 顶部导航栏 */}
       <header style={{ 
-        backgroundColor: 'white',
+        backgroundColor: 'rgba(255, 255, 255, 0.8)',
+        backdropFilter: 'blur(10px)',
         boxShadow: '0 1px 2px 0 rgba(0, 0, 0, 0.05)'
       }}>
         <div style={{ 
@@ -435,7 +440,8 @@ function App() {
           <div 
             key={site.id} 
             style={{ 
-              backgroundColor: 'white',
+              backgroundColor: 'rgba(255, 255, 255, 0.8)',
+              backdropFilter: 'blur(10px)',
               borderRadius: '8px',
               padding: '16px',
               boxShadow: '0 1px 3px rgba(0,0,0,0.1)',
