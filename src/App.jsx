@@ -3,6 +3,7 @@ import './App.css'
 import AddSiteForm from './components/AddSiteForm'
 import ImportBookmarks from './components/ImportBookmarks'
 import EditSiteForm from './components/EditSiteForm'
+import bk1 from './img/bk1.jpg'
 
 function App() {
   const [sites, setSites] = useState([])
@@ -210,7 +211,7 @@ function App() {
       minHeight: '100vh', 
       backgroundColor: '#f3f4f6',
       fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
-      backgroundImage: 'url("/src/img/bk1.jpg")',
+      backgroundImage: `url(${bk1})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat'
